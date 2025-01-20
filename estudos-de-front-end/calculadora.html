@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Estudos</title>
 
     <script type="text/javascript" src="javascript/funcoes.js"></script>
+  </head>
 
-</head>
-<body>
-    
+  <body>
     <form action="">
+      <h1>Calculadora</h1>
+      N1: <input type="text" id="n1" /><br />
+      N2: <input type="text" id="n2" /><br />
 
-        <h1>Calculadora</h1>
-        N1: <input type="text" id="n1" /><br>
-        N2: <input type="text" id="n2" /><br>
+      <input type="button" value="Somar" onclick="calcular('+')" />
+      <input type="button" value="Subtração" onclick="calcular('-')" />
+      <input type="button" value="Multiplicar" onclick="calcular('*')" />
+      <input type="button" value="Divisão" onclick="calcular('/')" />
 
-        <input type="button" value="Somar" onclick="calcular('+')">
-        <input type="button" value="Subtração" onclick="calcular('-')">
-        <input type="button" value="Multiplicar" onclick="calcular('*')">
-        <input type="button" value="Divisão" onclick="calcular('/')">
-
-        <h1 id="resultado"> O resultado é </h1>
+      <h1 id="resultado">O resultado é</h1>
     </form>
-    </body>
+  </body>
 </html>
